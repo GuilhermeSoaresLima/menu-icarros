@@ -1,98 +1,85 @@
-.web {
+.header__menu--web {
   display: inline-flex;
 }
-.mobile {
+.header__menu--mobile {
   display: none;
 }
 
-.main-container {
+.header {
   background-color: rgb(0, 255, 0);
   width: 100%;
   height: 65px;
 }
 
-.header-container {
+.header__container {
   height: 100%;
   background-color: red;
   margin-right: auto;
   margin-left: auto;
 }
 
-.menu-header {
+.header__menu {
   width: 100%;
   height: 100%;
   justify-content: space-between;
 }
 
-.menu-header_container-logo {
+.header__logo {
   width: 156px;
-  height: 100%;
+  /* height: 100%; */
   background-color: blue;
   display: flex;
   justify-content: center;
 }
 
-.menu-header_image {
+.header__image {
   width: 90px;
   height: 100%;
 }
 
-.menu-header_container-items {
+.header__menu__items {
   width: 100%;
   display: inline-flex;
   background-color: rgb(255, 153, 0);
 }
 
-.menu-header_container-items nav {
+.header__menu__nav {
   width: 100%;
   height: 100%;
 }
 
-.menu-header_container-items nav ul {
+.header__menu__list {
   width: 100%;
   height: 100%;
   list-style-type: none;
   display: inline-flex;
   justify-content: space-evenly;
 }
-.menu-header_container-items nav ul li {
+.header__menu__item {
   padding: 24px 10px;
   cursor: pointer;
 }
 
-.menu-header_container-items nav ul li a {
+.header__menu__item-text {
   font-family: "Open Sans", sans-serif;
   font-size: 15px;
 }
 
-.menu-header_container-login {
+.header__menu__login {
   width: 156px;
   height: 100%;
   background-color: purple;
 }
 
-.menu-header_container-login ul {
-  width: 100%;
-  height: 100%;
-  list-style-type: none;
-  display: inline-flex;
-  justify-content: space-evenly;
-}
-
-.menu-header_container-login ul li {
+.header__menu__login-item {
   padding: 24px 5px;
   cursor: pointer;
-}
-
-.menu-header_container-login ul li a {
-  font-family: "Open Sans", sans-serif;
-  font-size: 15px;
 }
 
 /* Largura 1290px */
 
 @media only screen and (min-width: 1290px) {
-  .header-container {
+  .header__container {
     width: 1280px;
     height: 100%;
   }
@@ -100,33 +87,33 @@
 
 /* Largura da tela 992px */
 @media (max-width: 992px) {
-  .web {
+  .header__menu--web {
     display: none;
   }
 
-  .mobile {
+  .header__menu--mobile {
     display: block;
   }
 
-  .main-container {
+  .header {
     background-color: #2060cc;
   }
 
-  .header-container {
+  .header__container {
     height: 100%;
     background-color: transparent;
   }
 
-  .menu-header {
+  .header__menu {
     height: 100%;
   }
 
-  .menu-header_container-logo {
+  .header__logo {
     height: 100%;
     background-color: transparent;
   }
 
-  .menu-header_container-items nav {
+  .header__menu__nav {
     width: 60%;
     height: auto;
     position: fixed;
@@ -141,18 +128,18 @@
     display: block;
   }
 
-  .menu-header_container-items nav ul {
+  .header__menu__list {
     display: block;
     float: none;
     margin: 0 0 200px 0;
     width: 100%;
   }
 
-  .menu-header_container-items nav ul li {
+  .header__menu__item {
     padding: 0px 10px;
   }
 
-  .menu-header_container-items nav ul li a {
+  .header__menu__item-text {
     color: #444;
     display: block;
     font-weight: 400;
@@ -161,7 +148,7 @@
     width: 100%;
   }
 
-  .header--nav_overlay {
+  .header__menu__nav-overlay {
     position: fixed;
     width: 100%;
     height: auto;
@@ -171,10 +158,12 @@
     background-color: rgba(0, 0, 0, 0.8);
     z-index: 2;
   }
-  .menu-header_account-user {
+
+  .header__menu__account-user {
     background-color: #e7e7e7;
   }
-  .menu-header_image-app {
+
+  .header__menu__image-app {
     background-image: url("./assets/image-app.png");
     height: 73px;
     background-size: contain;
