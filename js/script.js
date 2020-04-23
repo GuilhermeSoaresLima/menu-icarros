@@ -1,14 +1,14 @@
 $(document).ready(function () {
-  $(".blue-header").click(function () {
+  $(".header-color--blue").click(function () {
     $(".header").addClass("header-color--active");
   });
-  $(".transparent-header").click(function () {
+  $(".header-color--transparent").click(function () {
     $(".header").removeClass("header-color--active");
   });
 });
 
 $(document).ready(function () {
-  let toggle = $(".menu-icon").hasClass("active");
+  let toggle = $(".menu-icon").hasClass("--active");
 
   if (toggle) {
     $(".--active").click(function () {

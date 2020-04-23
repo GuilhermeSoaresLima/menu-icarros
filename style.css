@@ -52,7 +52,7 @@ body {
   padding: 0px 40px 0px 40px;
 }
 
-.nav {
+.navigation {
   width: 100%;
   height: 100%;
 }
@@ -72,7 +72,7 @@ body {
 
 .content-view {
   font-family: "Open Sans";
-  font-size: 14px;
+  /* font-size: 14px; */
   color: #fff;
   /* position: absolute; */
   display: flex;
@@ -109,11 +109,13 @@ body {
   border-left: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-.lt-large {
+.large-letter {
+  font-size: 14px;
   font-weight: 600;
   font-family: arial, helvetica, sans-serif;
 }
-.lt-thin {
+.thin-letter {
+  font-size: 12px;
   font-weight: 400;
   font-family: open sans, helvetica, sans-serif;
 }
@@ -130,11 +132,7 @@ body {
   padding: 5px;
 }
 
-.box-user--not-logged {
-}
-
 .icones {
-  font-family: "icarros";
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -174,7 +172,8 @@ body {
   width: 3px;
 }
 
-.login {
+.login-button {
+  color: #fff;
   width: 100%;
   border: 1px solid #fff;
   padding: 7px 5px 7px 5px;
@@ -196,10 +195,6 @@ body {
 @media (max-width: 1118px) {
   .menu {
     padding: unset;
-  }
-
-  .content-view {
-    font-size: 13px;
   }
 }
 
@@ -234,7 +229,7 @@ body {
     transform: scale(1);
   }
 
-  .nav {
+  .navigation {
     width: 60%;
     position: fixed;
     top: 64px;
@@ -268,6 +263,7 @@ body {
   }
 
   .content-view {
+    font-size: 14px;
     color: #444;
     display: block;
     font-weight: 400;
