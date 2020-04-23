@@ -1,11 +1,18 @@
+// SCRIPT JQUERY PARA VALIDACAO DE MUDANCA DE CLASSES DINAMICAS
+
 $(document).ready(function () {
+  // TROCAR TOCAR DO HEADER
   $(".header-color--blue").click(function () {
     $(".header").addClass("header-color--active");
+    $(".login-button").addClass("color--dark-blue");
   });
   $(".header-color--transparent").click(function () {
     $(".header").removeClass("header-color--active");
+    $(".login-button").removeClass("color--dark-blue");
   });
 });
+
+// HABILITAR ANIMACAO DE MENU HAMBURGUER - VERSAO MOBILE
 
 $(document).ready(function () {
   let toggle = $(".menu-icon").hasClass("--active");

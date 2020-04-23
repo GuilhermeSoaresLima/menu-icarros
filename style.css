@@ -1,3 +1,5 @@
+/*  Propriedade para validação de Header transparante */
+
 body {
   background-image: linear-gradient(
     to right bottom,
@@ -6,6 +8,14 @@ body {
   );
   background-attachment: fixed;
 }
+
+/*  Classes de mudança de cor */
+
+.color--dark-blue {
+  background-color: #104fb9;
+}
+
+/* Classes principais */
 
 .view-web {
   display: inline-flex;
@@ -17,7 +27,6 @@ body {
 .header {
   width: 100%;
   height: 65px;
-  /* padding: 0px 10px 0px 10px; */
 }
 
 .header__container {
@@ -72,11 +81,8 @@ body {
 
 .content-view {
   font-family: "Open Sans";
-  /* font-size: 14px; */
   color: #fff;
-  /* position: absolute; */
   display: flex;
-  /* position: relative; */
   z-index: 3;
 }
 
@@ -118,38 +124,20 @@ body {
   font-size: 12px;
   font-weight: 400;
   font-family: open sans, helvetica, sans-serif;
+  margin: 3px 0px 0px 0px;
 }
 
 .header-color--active {
   background-color: #2060cc;
 }
 
-.box-user {
-}
 .box-user--logged {
   background-color: white;
   border-radius: 30px;
   padding: 5px;
 }
 
-.icones {
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-}
-
-.icone-ic_smartphone {
-  font-size: 20px;
-  float: left;
-  padding-right: 5px;
-  margin-top: -4px;
-}
-
-.icone-ic_smartphone:before {
-  content: "\e64f";
-}
+/*  Ícone de celular no bloco de usuario - versao desktop */
 
 .cellphone {
   width: 8px;
@@ -181,6 +169,10 @@ body {
   display: flex;
   justify-content: center;
   margin-top: -5px;
+}
+
+.login-button:hover {
+  background: rgba(0, 107, 220, 0.7);
 }
 
 /* Largura 1290px*/
@@ -224,9 +216,9 @@ body {
   .box-logo {
     height: 100%;
     background-color: transparent;
-    padding: 0px 0px 0px 15px;
+    padding: 18px 0px 0px 30px;
     justify-content: unset;
-    transform: scale(1);
+    transform: scale(1.2);
   }
 
   .navigation {
@@ -311,14 +303,15 @@ body {
     background-repeat: no-repeat;
   }
 
-  /* animation */
+  /* Classes de animacao - sem @keyframes */
+
   .menu-icon {
     width: 30px;
     height: 20px;
     float: left;
     transform: rotate(0deg);
     cursor: pointer;
-    margin: 21px 0px 0px 10px;
+    margin: 19px 0px 0px 2px;
   }
 
   .line {
