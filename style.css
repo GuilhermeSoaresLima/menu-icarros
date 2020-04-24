@@ -197,7 +197,7 @@ body {
   }
 
   .view-mobile {
-    display: block;
+    display: contents;
   }
 
   .header {
@@ -311,7 +311,7 @@ body {
     float: left;
     transform: rotate(0deg);
     cursor: pointer;
-    margin: 19px 0px 0px 2px;
+    margin: 19px 0px 0px 10px;
   }
 
   .line {
