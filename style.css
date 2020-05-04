@@ -82,7 +82,7 @@ body {
 .content-view {
   font-family: "Open Sans";
   color: #fff;
-  display: table-caption;
+  display: flex;
   z-index: 3;
 }
 
@@ -180,6 +180,14 @@ body {
 
 .login-button:hover {
   background: rgba(0, 107, 220, 0.7);
+}
+
+/* Largura 1020px*/
+
+@media (max-width: 1020px) {
+  .content-view {
+    display: table-caption;
+  }
 }
 
 /* Largura 1290px*/
