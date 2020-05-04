@@ -82,6 +82,13 @@ body {
 .content-view {
   font-family: "Open Sans";
   color: #fff;
+  display: table-caption;
+  z-index: 3;
+}
+
+.content-login-item {
+  font-family: "Open Sans";
+  color: #fff;
   display: flex;
   z-index: 3;
 }
